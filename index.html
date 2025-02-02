@@ -1,63 +1,174 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简单网页示例</title>
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="renderer" content="webkit">
+    <meta property="og:title" content="CURRICULUM VITAE" />
+    <title>CURRICULUM VITAE</title>
+    <meta name="keywords" content="CURRICULUM VITAE">
+    <meta name="description" content="CURRICULUM VITAE">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
         }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 15px 0;
-            font-size: 24px;
-        }
-        .container {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #0056b3;
+        P_1 {
+        text-indent: 20px;
         }
     </style>
+    <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" type="text/css"  href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 </head>
+
 <body>
 
-<header>
-    欢迎来到我的网页
-</header>
+<!--头部开始-->
+<div class="head">
+    <div class="head_container">
 
-<div class="container">
-    <h2>你好，世界！</h2>
-    <p>这是一个简单的 HTML 页面示例，包含基本的 CSS 样式和按钮交互。</p>
-    <button onclick="sayHello()">点击我</button>
+        <!--头部总按钮开始-->
+        <div class="nav_box">
+            <div class="nav_xiala">
+                <!--头部导航开始-->
+                <ul class="nav">
+                    <li><a href="index.html" class="nav_a nav_active">HOME</a></li>
+                    <li><a href="PageCurriculumVitae_Home.html" class="nav_a">个人简介</a></li>
+                    <li><a href="PageStudy_Home.html" class="nav_a">研究内容</a></li>
+                    <li><a href="PageTeam_Home.html" class="nav_a">团队简介</a></li>
+                    <li><a href="PageJoin_Home.html" class="nav_a">加入我们</a></li>
+                    <div class="nav_scroll">下滑查看更多栏目</div>
+                </ul>
+                <!--头部导航结束-->
+
+            </div>
+        </div>
+        <!--手机端导航按钮-->
+        <div class="nav_menu"><span></span></div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--全局banner开始-->
+<div class="base_banner bg" style="background:url('img/page2_home.jpg')">
+    <div class="head_container">
+        <div class="base_table">
+            <div class="base_cell">
+            </div>
+        </div>
+    </div>
+</div>
+<!--全局banner结束-->
+
+
+
+<!--about页开始-->
+
+<div class="content_container">
+
+    <div class="list_father clearfix">
+        <div class="list_tab_box">
+
+        <ul id="list_tab">
+            <li><a href="index.html" class="list_tab_active">项目组简介</a></li>
+            <li><a href="PageJoin_Home.html" >加入我们</a></li>
+        </ul>
+    </div>
+
+
+    <!--人员介绍开始0-->
+    <div class="list_box">
+        <!--头衔-->
+        <div class="renyuan_title">
+            <h2>项目组简介</h2>
+        </div>
+        <!--简介-->
+        <div class="renyuan_text">
+            <!--简介
+            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">个人概述</p>-->
+            <p>  白云博士,  2013年博士毕业于美国伊利诺伊大学香槟分校,  土木与环境工程专业。2008年本科毕业于浙江大学土木工程专业及竺可桢学院工程教育辅修专业。
+                2013至2014年于伊利诺伊大学担任博士后研究员。2014年至2022年于美国罗格斯大学担任研究助理研究员、助理研究教授。
+                2022年9月加入香港科技大学(广州)智能交通学域, 担任助理教授。</p>
+
+            <!--研究兴趣-->
+            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Research Interests</p>         
+
+            <p><b style="color:rgb(227, 12, 12);font-size:16px;font-weight: bold;">
+                白云博士的研究方向是多模式、复杂交通系统建模，应用先进的数据科学、运筹学、系统工程、和管理学方法来解决交通、供应链网络设计及基础设施资产管理问题。
+            </b> 她目前的研究重点是交通设施数字孪生和智能运维，包括基础设施（轨道，桥梁等）的大数据采集、
+                融合和分析、来研究其老化和病害机制、状态及剩余寿命的预测、生命周期成本分析、养护决策优化和预算投资规划、以及系统风险和韧性分析。</b></p>
+            <!--插入图像1-->
+            <img src="img/research_01.jpg" alt="Paris" style="width:50%">
+            <!--插入图像名字——待补充-->
+
+            <!--研究方向-->
+            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Research Direction</p>   
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
+                数字孪生和智慧运维:</b></p>         
+            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>数字地铁，视觉及振噪等多源数据融合，数据算法实现轨道问题监测;</p></P_1>    
+            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>开发机器学习算法来模拟重大基础设施(轨道、桥梁、路面等)的伤损和磨耗机制，
+                预测未来老化状况，优化养护维修方案;</p></P_1>              
+            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>海洋基础设施维护管理模型及优化系统开发;</p></P_1>              
+            <!--02-->
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
+                基于计算机视觉技术的交通安全管理和运营优化、及交通系统韧性研究;</b></p> 
+            <!--03-->   
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
+                基于物联网技术的智能交通系统的优化管理，如共享出行，智能物流等;</b></p>    
+
+            <!--对你的期望-->
+            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Expectations For You</p>                
+            <!--1-->
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你是本专业的最优秀的学生之一;</b></p>    
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你自信未来能成为交通人工智能领域的最杰出的人才之一;</b></p>              
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你来自工程学, 运筹学, 计算机, EE, 数学，统计学等相关专业，有扎实的数理基础;</b></p>    
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你对智能交通前沿技术充满好奇，勇于挑战未知领域;</b></p>                
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你既能独立研究，也能和不同领域的学者和专家沟通合作;</b></p>    
+            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你思维活跃大胆，敢于提出新思路，做事踏实勤奋，认真求证;</b></p>  
+
+            <!--我能提供什么-->
+            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">What Can I Do</p>  
+            <p>与来自交通工程，人工智能，优化科学的国内外教授, 学生和多位顶尖行业专家共同研究的机会，
+                开发应用前沿人工智能技术解决智能交通领域的重大前沿问题。白老师与多个美国课题组及研究中心密切合作，
+                鼓励并推荐学生进行国际交流和合作。团队未来侧重于产学研相结合的模式及前沿工程技术的开发与转化，
+                为学生提供产品开发、测试及市场化等相关经历和机会。</p> 
+        </div>
+
+    </div>
 </div>
 
-<script>
-    function sayHello() {
-        alert("Hello! 你点击了按钮！");
-    }
-</script>
+<!--about页结束-->
+
+
+
+<!--底部开始-->
+<div class="footer">
+    <div class="footer_bottom clearfix">
+        <div class="content_container">
+            <div class="footer_banquanbeian">
+                <span>Copyright © 2022 Yun Bai</span>
+                <P_1><span>TEL: 020-88335768</span></P_1>
+                <P_1><span>Email:yunbai@ust.hk</span></P_1>
+                
+            </div>
+            <div class="footer_link">
+                <a href="https://hkust-gz.edu.cn/zh-hans">学校首页</a>|
+                <a href="https://hkust-gz.edu.cn/zh-hans/academics/four-hubs/systems-hub">系统枢纽</a>|
+                <a href="index.html">个人主页</a>|
+                <a href="PageJoin_Home.html">加入我们</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
 
 </body>
 </html>

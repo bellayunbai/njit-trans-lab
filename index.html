@@ -1,174 +1,240 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="renderer" content="webkit">
-    <meta property="og:title" content="CURRICULUM VITAE" />
-    <title>CURRICULUM VITAE</title>
-    <meta name="keywords" content="CURRICULUM VITAE">
-    <meta name="description" content="CURRICULUM VITAE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Transportation Lab - NJIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        img {
-            display: block;
-            margin: 0 auto;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+            color: white;
+            overflow-x: hidden;
         }
-        P_1 {
-        text-indent: 20px;
+
+        .justify-text {
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
+            max-width: 90%;
+            margin: 0 auto;
+            line-height: 1.8;
+            display: block;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
         }
     </style>
-    <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
-    <link rel="stylesheet" type="text/css"  href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css"  href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/base.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
 
-<!--头部开始-->
-<div class="head">
-    <div class="head_container">
 
-        <!--头部总按钮开始-->
-        <div class="nav_box">
-            <div class="nav_xiala">
-                <!--头部导航开始-->
-                <ul class="nav">
-                    <li><a href="index.html" class="nav_a nav_active">HOME</a></li>
-                    <li><a href="PageCurriculumVitae_Home.html" class="nav_a">个人简介</a></li>
-                    <li><a href="PageStudy_Home.html" class="nav_a">研究内容</a></li>
-                    <li><a href="PageTeam_Home.html" class="nav_a">团队简介</a></li>
-                    <li><a href="PageJoin_Home.html" class="nav_a">加入我们</a></li>
-                    <div class="nav_scroll">下滑查看更多栏目</div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">INTR Lab - NJIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Director</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#professor">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#professor">Publication</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
                 </ul>
-                <!--头部导航结束-->
-
             </div>
         </div>
-        <!--手机端导航按钮-->
-        <div class="nav_menu"><span></span></div>
-    </div>
-</div>
-<!--头部结束-->
+    </nav>
 
-<!--全局banner开始-->
-<div class="base_banner bg" style="background:url('img/page2_home.jpg')">
-    <div class="head_container">
-        <div class="base_table">
-            <div class="base_cell">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="Research Image 1">
+                <div class="carousel-caption carousel-text">
+                    <h2>Welcome to Intelligent Transportation Lab at NJIT</h2>
+                    <p>Innovating the Future of Mobility</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide4.jpg" class="d-block w-100" alt="Research Image 2">
+                <div class="carousel-caption carousel-text">
+                    <h2>Smart Transportation Solutions</h2>
+                    <p>AI-driven research for intelligent mobility</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="Research Image 3">
+                <div class="carousel-caption carousel-text">
+                    <h2>Join Our Research Team</h2>
+                    <p>Work on cutting-edge transportation projects</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!--全局banner结束-->
-
-
-
-<!--about页开始-->
-
-<div class="content_container">
-
-    <div class="list_father clearfix">
-        <div class="list_tab_box">
-
-        <ul id="list_tab">
-            <li><a href="index.html" class="list_tab_active">项目组简介</a></li>
-            <li><a href="PageJoin_Home.html" >加入我们</a></li>
-        </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
+    <style>
+        .carousel-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: max-content;
+        }
 
-    <!--人员介绍开始0-->
-    <div class="list_box">
-        <!--头衔-->
-        <div class="renyuan_title">
-            <h2>项目组简介</h2>
-        </div>
-        <!--简介-->
-        <div class="renyuan_text">
-            <!--简介
-            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">个人概述</p>-->
-            <p>  白云博士,  2013年博士毕业于美国伊利诺伊大学香槟分校,  土木与环境工程专业。2008年本科毕业于浙江大学土木工程专业及竺可桢学院工程教育辅修专业。
-                2013至2014年于伊利诺伊大学担任博士后研究员。2014年至2022年于美国罗格斯大学担任研究助理研究员、助理研究教授。
-                2022年9月加入香港科技大学(广州)智能交通学域, 担任助理教授。</p>
+        .carousel-text h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: cyan;
+            text-shadow: 0 0 10px cyan, 0 0 20px blue, 0 0 30px cyan;
+            animation: glowEffect 1.5s infinite alternate;
+            margin: 0;
+        }
 
-            <!--研究兴趣-->
-            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Research Interests</p>         
+        .carousel-text p {
+            font-size: 1.2rem;
+            color: white;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+            margin: 3px 0 0 0;
+        }
 
-            <p><b style="color:rgb(227, 12, 12);font-size:16px;font-weight: bold;">
-                白云博士的研究方向是多模式、复杂交通系统建模，应用先进的数据科学、运筹学、系统工程、和管理学方法来解决交通、供应链网络设计及基础设施资产管理问题。
-            </b> 她目前的研究重点是交通设施数字孪生和智能运维，包括基础设施（轨道，桥梁等）的大数据采集、
-                融合和分析、来研究其老化和病害机制、状态及剩余寿命的预测、生命周期成本分析、养护决策优化和预算投资规划、以及系统风险和韧性分析。</b></p>
-            <!--插入图像1-->
-            <img src="img/research_01.jpg" alt="Paris" style="width:50%">
-            <!--插入图像名字——待补充-->
+        @keyframes glowEffect {
+            from {
+                text-shadow: 0 0 5px cyan, 0 0 10px blue;
+            }
 
-            <!--研究方向-->
-            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Research Direction</p>   
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
-                数字孪生和智慧运维:</b></p>         
-            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>数字地铁，视觉及振噪等多源数据融合，数据算法实现轨道问题监测;</p></P_1>    
-            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>开发机器学习算法来模拟重大基础设施(轨道、桥梁、路面等)的伤损和磨耗机制，
-                预测未来老化状况，优化养护维修方案;</p></P_1>              
-            <P_1><p><i class="fa fa-circle-o" style="font-size:2px"></i>海洋基础设施维护管理模型及优化系统开发;</p></P_1>              
-            <!--02-->
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
-                基于计算机视觉技术的交通安全管理和运营优化、及交通系统韧性研究;</b></p> 
-            <!--03-->   
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b><b style="color:rgb(0, 0, 0);font-size:16px;font-weight: bold;">
-                基于物联网技术的智能交通系统的优化管理，如共享出行，智能物流等;</b></p>    
-
-            <!--对你的期望-->
-            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">Expectations For You</p>                
-            <!--1-->
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你是本专业的最优秀的学生之一;</b></p>    
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你自信未来能成为交通人工智能领域的最杰出的人才之一;</b></p>              
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你来自工程学, 运筹学, 计算机, EE, 数学，统计学等相关专业，有扎实的数理基础;</b></p>    
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你对智能交通前沿技术充满好奇，勇于挑战未知领域;</b></p>                
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你既能独立研究，也能和不同领域的学者和专家沟通合作;</b></p>    
-            <p><b><i class="fa fa-circle" style="font-size:2px"></i></b>你思维活跃大胆，敢于提出新思路，做事踏实勤奋，认真求证;</b></p>  
-
-            <!--我能提供什么-->
-            <p style="color:rgb(0, 0, 0);font-size:24px;font-weight: bold;">What Can I Do</p>  
-            <p>与来自交通工程，人工智能，优化科学的国内外教授, 学生和多位顶尖行业专家共同研究的机会，
-                开发应用前沿人工智能技术解决智能交通领域的重大前沿问题。白老师与多个美国课题组及研究中心密切合作，
-                鼓励并推荐学生进行国际交流和合作。团队未来侧重于产学研相结合的模式及前沿工程技术的开发与转化，
-                为学生提供产品开发、测试及市场化等相关经历和机会。</p> 
-        </div>
-
-    </div>
-</div>
-
-<!--about页结束-->
+            to {
+                text-shadow: 0 0 15px cyan, 0 0 25px blue;
+            }
+        }
+    </style>
 
 
+    <!-- 🔹 About Us -->
+    <div id="about" class="section">
+        <div class="container">
+            <p class="justify-text">
+                <strong>Intelligent Transportation (INTR) Laboratory</strong> is a cutting-edge research facility within
+                the <span style="color: cyan;">Intelligent Transportation Domain</span> at the <strong>New Jersey
+                    Institute of Technology (NJIT)</strong>.
+                The laboratory specializes in the <strong>modeling of multimodal and complex transportation
+                    systems</strong>, applying <em>state-of-the-art data science</em>,
+                <span style="color: rgb(50, 189, 16);">operations research</span>, <span style="color: rgb(50, 189, 16);">systems
+                    engineering</span>, and <span style="color: rgb(50, 189, 16);">management approaches</span> to tackle
+                challenges in transportation networks,
+                <strong>supply chain optimization</strong>, and <strong>infrastructure asset management</strong>.
+                <strong>INTR fosters a highly collaborative and interdisciplinary research environment</strong>, where
+                students have the opportunity to work alongside
+                <em>leading academics, peers, and industry experts</em> from diverse disciplines such as <span
+                    style="color: cyan;">transportation engineering</span>, <strong>artificial intelligence</strong>,
+                <span style="color: cyan;">optimization science</span>, and more. The laboratory actively promotes
+                <strong>international collaboration</strong>, with
+                strong ties to <span style="color: rgb(50, 189, 16);">numerous research groups and centers in the United States
+                    and beyond</span>, encouraging and supporting
+                <strong>student participation in international exchange programs and joint research
+                    initiatives</strong>.
+                Moreover, the laboratory embraces a <em>strong emphasis on industry-relevant research and technology
+                    transfer</em>. By adopting a model that integrates
+                <span style="color: cyan;">academic inquiry with practical applications</span>, it offers students
+                <strong>hands-on experiences in product development</strong>, testing, and market deployment,
+                preparing them for <span style="color: rgb(50, 189, 16);">careers at the intersection of academia, industry,
+                    and technological innovation</span>.
+            </p>
+            <br></br>
+            <p class="justify-text">
+                <strong>Professor Bai Yun</strong> is the head of the INTR Laboratory, where <strong>she</strong> leads
+                a team of researchers in the field
+                of <span style="color: cyan;">transportation infrastructure management</span>, <strong>health
+                    monitoring</strong>, <span style="color: rgb(50, 189, 16);">safety perception</span>,
+                <strong>risk analysis</strong>, and <span style="color: cyan;">network modeling and optimization</span>.
+                A graduate of the <strong>University of Illinois at Urbana-Champaign</strong> with a <span
+                    style="color: cyan;">Ph.D. in Civil Engineering</span>,
+                Professor Bai’s academic journey began at <strong>Zhejiang University</strong>, where
+                <strong>she</strong> earned a
+                <span style="color: cyan;">Bachelor of Science in Civil Engineering</span>. Before joining
+                <strong>NJIT</strong>,
+                Professor Bai served as an <span style="color: cyan;">Assistant Research Professor</span> at
+                <strong>Rutgers University</strong> and <strong>HKUST(GZ)</strong> from 2014 to 2022,
+                where <strong>she</strong> delved into the <strong>management and optimization of transportation
+                    infrastructure</strong>.
+                Her research career includes a <em>postdoctoral fellowship</em> at <strong>UIUC</strong> from 2013 to
+                2014 and an internship as an <strong>Operations Research Analyst</strong> at <span
+                    style="color: cyan;">Caterpillar Inc.</span> in 2012.
+            </p>
+            <br></br>
 
-<!--底部开始-->
-<div class="footer">
-    <div class="footer_bottom clearfix">
-        <div class="content_container">
-            <div class="footer_banquanbeian">
-                <span>Copyright © 2022 Yun Bai</span>
-                <P_1><span>TEL: 020-88335768</span></P_1>
-                <P_1><span>Email:yunbai@ust.hk</span></P_1>
-                
+            <div class="recruitment-box">
+                <p class="justify-text">
+                    <strong>🎓 Multiple Ph.D. / RA positions available! 🎓</strong><br>
+                    We are actively recruiting Ph.D. and RA candidates. Please feel free to send your resume to <a href="mailto:yunbai@njit.edu"
+                        class="text-warning">yun.bai@njit.edu</a>.
+                    
+                </p>
             </div>
-            <div class="footer_link">
-                <a href="https://hkust-gz.edu.cn/zh-hans">学校首页</a>|
-                <a href="https://hkust-gz.edu.cn/zh-hans/academics/four-hubs/systems-hub">系统枢纽</a>|
-                <a href="index.html">个人主页</a>|
-                <a href="PageJoin_Home.html">加入我们</a>
-            </div>
+
+            <style>
+                .recruitment-box {
+                    background: rgba(0, 26, 51, 0.8);
+                    padding: 15px;
+                    border-radius: 10px;
+                    border: 2px solid cyan;
+                    margin-top: 20px;
+                    text-align: center;
+                    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+                }
+            </style>
         </div>
     </div>
-</div>
-<!--底部结束-->
+
+
+
+    <!-- 🔹 Footer -->
+    <footer class="footer">
+        &copy; 2024 Intelligent Transportation Lab - NJIT | All Rights Reserved
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

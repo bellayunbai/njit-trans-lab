@@ -16,12 +16,19 @@
 
         .justify-text {
             text-align: justify;
+            /* 让文本两端对齐 */
             text-justify: inter-word;
+            /* 让单词间距自动调整 */
             hyphens: auto;
+            /* 让长单词适当断行，防止不均匀 */
             max-width: 90%;
+            /* 限制文本宽度，增强对齐效果 */
             margin: 0 auto;
+            /* 让文本块在页面中居中 */
             line-height: 1.8;
+            /* 增加行距，提高可读性 */
             display: block;
+            /* 确保 p 是块级元素，受 justify 影响 */
         }
 
         .navbar {
@@ -29,6 +36,7 @@
             backdrop-filter: blur(10px);
         }
 
+        /* 🔹 轮播图 */
         .carousel-item img {
             width: 100%;
             height: 80vh;
@@ -52,6 +60,7 @@
 <body>
 
 
+    <!-- 🔹 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">INTR Lab - NJIT</a>
@@ -67,11 +76,13 @@
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- 🔹 轮播图 -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -105,6 +116,7 @@
     </div>
 
     <style>
+        /* 🔹 让黑框完全包裹文字，并居中 */
         .carousel-text {
             position: absolute;
             top: 50%;
@@ -112,15 +124,23 @@
             transform: translate(-50%, -50%);
             text-align: center;
             background: rgba(0, 0, 0, 0.5);
+            /* 半透明黑框 */
             padding: 5px 15px;
+            /* 让黑框紧贴文字，避免过大 */
             border-radius: 10px;
+            /* 圆角优化 */
             display: flex;
             flex-direction: column;
+            /* 让 h2 和 p 垂直排列 */
             align-items: center;
+            /* 让内容水平居中 */
             justify-content: center;
+            /* 让黑框内文字垂直居中 */
             min-width: max-content;
+            /* 让黑框宽度根据内容自动调整 */
         }
 
+        /* 🔹 大标题优化 */
         .carousel-text h2 {
             font-size: 2.5rem;
             font-weight: bold;
@@ -128,15 +148,19 @@
             text-shadow: 0 0 10px cyan, 0 0 20px blue, 0 0 30px cyan;
             animation: glowEffect 1.5s infinite alternate;
             margin: 0;
+            /* 去掉默认 margin，防止黑框变大 */
         }
 
+        /* 🔹 副标题优化 */
         .carousel-text p {
             font-size: 1.2rem;
             color: white;
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
             margin: 3px 0 0 0;
+            /* 让 p 和 h2 间距最小化，避免黑框过高 */
         }
 
+        /* 🔹 文字炫光动画 */
         @keyframes glowEffect {
             from {
                 text-shadow: 0 0 5px cyan, 0 0 10px blue;
@@ -158,8 +182,10 @@
                     Institute of Technology (NJIT)</strong>.
                 The laboratory specializes in the <strong>modeling of multimodal and complex transportation
                     systems</strong>, applying <em>state-of-the-art data science</em>,
-                <span style="color: rgb(50, 189, 16);">operations research</span>, <span style="color: rgb(50, 189, 16);">systems
-                    engineering</span>, and <span style="color: rgb(50, 189, 16);">management approaches</span> to tackle
+                <span style="color: rgb(50, 189, 16);">operations research</span>, <span
+                    style="color: rgb(50, 189, 16);">systems
+                    engineering</span>, and <span style="color: rgb(50, 189, 16);">management approaches</span> to
+                tackle
                 challenges in transportation networks,
                 <strong>supply chain optimization</strong>, and <strong>infrastructure asset management</strong>.
                 <strong>INTR fosters a highly collaborative and interdisciplinary research environment</strong>, where
@@ -168,7 +194,8 @@
                     style="color: cyan;">transportation engineering</span>, <strong>artificial intelligence</strong>,
                 <span style="color: cyan;">optimization science</span>, and more. The laboratory actively promotes
                 <strong>international collaboration</strong>, with
-                strong ties to <span style="color: rgb(50, 189, 16);">numerous research groups and centers in the United States
+                strong ties to <span style="color: rgb(50, 189, 16);">numerous research groups and centers in the United
+                    States
                     and beyond</span>, encouraging and supporting
                 <strong>student participation in international exchange programs and joint research
                     initiatives</strong>.
@@ -176,7 +203,8 @@
                     transfer</em>. By adopting a model that integrates
                 <span style="color: cyan;">academic inquiry with practical applications</span>, it offers students
                 <strong>hands-on experiences in product development</strong>, testing, and market deployment,
-                preparing them for <span style="color: rgb(50, 189, 16);">careers at the intersection of academia, industry,
+                preparing them for <span style="color: rgb(50, 189, 16);">careers at the intersection of academia,
+                    industry,
                     and technological innovation</span>.
             </p>
             <br></br>
@@ -202,24 +230,31 @@
             </p>
             <br></br>
 
+            <!-- 🔹 招聘信息（添加框框） -->
             <div class="recruitment-box">
                 <p class="justify-text">
                     <strong>🎓 Multiple Ph.D. / RA positions available! 🎓</strong><br>
-                    We are actively recruiting Ph.D. and RA candidates. Please feel free to send your resume to <a href="mailto:yunbai@njit.edu"
-                        class="text-warning">yun.bai@njit.edu</a>.
-                    
+                    We are actively recruiting Ph.D. and RA candidates. Please feel free to send your resume to <a
+                        href="mailto:yunbai@njit.edu" class="text-warning">yun.bai@njit.edu</a>.
+
                 </p>
             </div>
 
             <style>
+                /* 🔹 招聘信息框样式 */
                 .recruitment-box {
                     background: rgba(0, 26, 51, 0.8);
+                    /* 深蓝色背景 */
                     padding: 15px;
                     border-radius: 10px;
+                    /* 圆角边框 */
                     border: 2px solid cyan;
+                    /* 亮蓝色边框 */
                     margin-top: 20px;
                     text-align: center;
+                    /* 文本居中 */
                     box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+                    /* 光晕效果 */
                 }
             </style>
         </div>

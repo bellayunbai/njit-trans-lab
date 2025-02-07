@@ -6,34 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intelligent Transportation Lab - NJIT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
+        /* 🔹 全局样式 */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0a192f;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        .justify-text {
-            text-align: justify;
-            /* 让文本两端对齐 */
-            text-justify: inter-word;
-            /* 让单词间距自动调整 */
-            hyphens: auto;
-            /* 让长单词适当断行，防止不均匀 */
-            max-width: 90%;
-            /* 限制文本宽度，增强对齐效果 */
-            margin: 0 auto;
-            /* 让文本块在页面中居中 */
+            font-family: "Times New Roman", serif;
+            background-color: #f5f5f5;
+            color: #333;
             line-height: 1.8;
-            /* 增加行距，提高可读性 */
-            display: block;
-            /* 确保 p 是块级元素，受 justify 影响 */
         }
 
+        /* 🔹 导航栏 */
         .navbar {
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
+            background-color: #1A237E;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 16px;
         }
 
         /* 🔹 轮播图 */
@@ -43,13 +38,76 @@
             object-fit: cover;
         }
 
-        .section {
-            padding: 60px 20px;
+        .carousel-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: max-content;
         }
 
+        .carousel-text h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+        .carousel-text p {
+            font-size: 1.2rem;
+            color: white;
+            margin: 5px 0 0 0;
+        }
+
+        /* 🔹 标题样式 */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1A237E;
+            border-bottom: 2px solid #1A237E;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* 🔹 主要内容排版 */
+        .container p {
+            text-align: justify;
+        }
+
+        .card {
+            border: none;
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* 🔹 招聘信息框 */
+        .recruitment-box {
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 5px solid #1A237E;
+        }
+
+        .recruitment-box a {
+            color: #1A237E;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* 🔹 页脚 */
         .footer {
-            background: #000;
+            background-color: #1A237E;
+            color: white;
             padding: 20px;
             text-align: center;
             font-size: 14px;
@@ -59,11 +117,10 @@
 
 <body>
 
-
     <!-- 🔹 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">INTR Lab - NJIT</a>
+            <a class="navbar-brand" href="#">Intelligent Transportation Lab - NJIT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,199 +128,100 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="director.html">Director</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- 🔹 轮播图 -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide1.jpg" class="d-block w-100" alt="Research Image 1">
-                <div class="carousel-caption carousel-text">
-                    <h2>Welcome to Intelligent Transportation Lab at NJIT</h2>
-                    <p>Innovating the Future of Mobility</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide4.jpg" class="d-block w-100" alt="Research Image 2">
-                <div class="carousel-caption carousel-text">
-                    <h2>Smart Transportation Solutions</h2>
-                    <p>AI-driven research for intelligent mobility</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide3.jpg" class="d-block w-100" alt="Research Image 3">
-                <div class="carousel-caption carousel-text">
-                    <h2>Join Our Research Team</h2>
-                    <p>Work on cutting-edge transportation projects</p>
-                </div>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="Research Image 1">
+            <div class="carousel-caption carousel-text">
+                <h2>Welcome to Intelligent Transportation Lab at NJIT</h2>
+                <p>Innovating the Future of Mobility</p>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+            <img src="img/slide4.jpg" class="d-block w-100" alt="Research Image 2">
+            <div class="carousel-caption carousel-text">
+                <h2>Smart Transportation Solutions</h2>
+                <p>AI-driven research for intelligent mobility</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block w-100" alt="Research Image 3">
+            <div class="carousel-caption carousel-text">
+                <h2>Join Our Research Team</h2>
+                <p>Work on cutting-edge transportation projects</p>
+            </div>
+        </div>
     </div>
-
-    <style>
-        /* 🔹 让黑框完全包裹文字，并居中 */
-        .carousel-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background: rgba(0, 0, 0, 0.5);
-            /* 半透明黑框 */
-            padding: 5px 15px;
-            /* 让黑框紧贴文字，避免过大 */
-            border-radius: 10px;
-            /* 圆角优化 */
-            display: flex;
-            flex-direction: column;
-            /* 让 h2 和 p 垂直排列 */
-            align-items: center;
-            /* 让内容水平居中 */
-            justify-content: center;
-            /* 让黑框内文字垂直居中 */
-            min-width: max-content;
-            /* 让黑框宽度根据内容自动调整 */
-        }
-
-        /* 🔹 大标题优化 */
-        .carousel-text h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: cyan;
-            text-shadow: 0 0 10px cyan, 0 0 20px blue, 0 0 30px cyan;
-            animation: glowEffect 1.5s infinite alternate;
-            margin: 0;
-            /* 去掉默认 margin，防止黑框变大 */
-        }
-
-        /* 🔹 副标题优化 */
-        .carousel-text p {
-            font-size: 1.2rem;
-            color: white;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-            margin: 3px 0 0 0;
-            /* 让 p 和 h2 间距最小化，避免黑框过高 */
-        }
-
-        /* 🔹 文字炫光动画 */
-        @keyframes glowEffect {
-            from {
-                text-shadow: 0 0 5px cyan, 0 0 10px blue;
-            }
-
-            to {
-                text-shadow: 0 0 15px cyan, 0 0 25px blue;
-            }
-        }
-    </style>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
 
 
     <!-- 🔹 About Us -->
-    <div id="about" class="section">
-        <div class="container">
-            <p class="justify-text">
-                <strong>Intelligent Transportation (INTR) Laboratory</strong> is a cutting-edge research facility within
-                the <span style="color: cyan;">Intelligent Transportation Domain</span> at the <strong>New Jersey
-                    Institute of Technology (NJIT)</strong>.
-                The laboratory specializes in the <strong>modeling of multimodal and complex transportation
-                    systems</strong>, applying <em>state-of-the-art data science</em>,
-                <span style="color: rgb(50, 189, 16);">operations research</span>, <span
-                    style="color: rgb(50, 189, 16);">systems
-                    engineering</span>, and <span style="color: rgb(50, 189, 16);">management approaches</span> to
-                tackle
-                challenges in transportation networks,
-                <strong>supply chain optimization</strong>, and <strong>infrastructure asset management</strong>.
-                <strong>INTR fosters a highly collaborative and interdisciplinary research environment</strong>, where
-                students have the opportunity to work alongside
-                <em>leading academics, peers, and industry experts</em> from diverse disciplines such as <span
-                    style="color: cyan;">transportation engineering</span>, <strong>artificial intelligence</strong>,
-                <span style="color: cyan;">optimization science</span>, and more. The laboratory actively promotes
-                <strong>international collaboration</strong>, with
-                strong ties to <span style="color: rgb(50, 189, 16);">numerous research groups and centers in the United
-                    States
-                    and beyond</span>, encouraging and supporting
-                <strong>student participation in international exchange programs and joint research
-                    initiatives</strong>.
-                Moreover, the laboratory embraces a <em>strong emphasis on industry-relevant research and technology
-                    transfer</em>. By adopting a model that integrates
-                <span style="color: cyan;">academic inquiry with practical applications</span>, it offers students
-                <strong>hands-on experiences in product development</strong>, testing, and market deployment,
-                preparing them for <span style="color: rgb(50, 189, 16);">careers at the intersection of academia,
-                    industry,
-                    and technological innovation</span>.
-            </p>
-            <br></br>
-            <p class="justify-text">
-                <strong>Professor Bai Yun</strong> is the head of the INTR Laboratory, where <strong>she</strong> leads
-                a team of researchers in the field
-                of <span style="color: cyan;">transportation infrastructure management</span>, <strong>health
-                    monitoring</strong>, <span style="color: rgb(50, 189, 16);">safety perception</span>,
-                <strong>risk analysis</strong>, and <span style="color: cyan;">network modeling and optimization</span>.
-                A graduate of the <strong>University of Illinois at Urbana-Champaign</strong> with a <span
-                    style="color: cyan;">Ph.D. in Civil Engineering</span>,
-                Professor Bai’s academic journey began at <strong>Zhejiang University</strong>, where
-                <strong>she</strong> earned a
-                <span style="color: cyan;">Bachelor of Science in Civil Engineering</span>. Before joining
-                <strong>NJIT</strong>,
-                Professor Bai served as an <span style="color: cyan;">Assistant Research Professor</span> at
-                <strong>Rutgers University</strong> and <strong>HKUST(GZ)</strong> from 2014 to 2022,
-                where <strong>she</strong> delved into the <strong>management and optimization of transportation
-                    infrastructure</strong>.
-                Her research career includes a <em>postdoctoral fellowship</em> at <strong>UIUC</strong> from 2013 to
-                2014 and an internship as an <strong>Operations Research Analyst</strong> at <span
-                    style="color: cyan;">Caterpillar Inc.</span> in 2012.
-            </p>
-            <br></br>
+    <div id="about" class="container mt-5">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            <strong>Intelligent Transportation (INTR) Laboratory</strong> is a cutting-edge research facility within
+            the <strong>Intelligent Transportation Domain</strong> at the <strong>New Jersey Institute of Technology (NJIT)</strong>.
+            The laboratory specializes in the <strong>modeling of multimodal and complex transportation systems</strong>,
+            applying <em>state-of-the-art data science</em>, <strong>operations research</strong>, <strong>systems engineering</strong>,
+            and <strong>management approaches</strong> to tackle challenges in transportation networks,
+            <strong>supply chain optimization</strong>, and <strong>infrastructure asset management</strong>.
+            <strong>INTR fosters a highly collaborative and interdisciplinary research environment</strong>, where
+            students have the opportunity to work alongside <em>leading academics, peers, and industry experts</em>
+            from diverse disciplines such as <strong>transportation engineering</strong>, <strong>artificial intelligence</strong>,
+            and <strong>optimization science</strong>. The laboratory actively promotes <strong>international collaboration</strong>,
+            with strong ties to <strong>numerous research groups and centers in the United States and beyond</strong>,
+            encouraging and supporting <strong>student participation in international exchange programs and joint research initiatives</strong>.
+            Moreover, the laboratory embraces a <em>strong emphasis on industry-relevant research and technology transfer</em>.
+            By adopting a model that integrates <strong>academic inquiry with practical applications</strong>, it offers students
+            <strong>hands-on experiences in product development</strong>, testing, and market deployment, preparing them for
+            <strong>careers at the intersection of academia, industry, and technological innovation</strong>.
+        </p>
+        
 
-            <!-- 🔹 招聘信息（添加框框） -->
-            <div class="recruitment-box">
-                <p class="justify-text">
-                    <strong>🎓 Multiple Ph.D. / RA positions available! 🎓</strong><br>
-                    We are actively recruiting Ph.D. and RA candidates. Please feel free to send your resume to <a
-                        href="mailto:yunbai@njit.edu" class="text-warning">yun.bai@njit.edu</a>.
+        <p>
+            <strong>Professor Bai Yun</strong> is the head of the INTR Laboratory, where she leads a team of researchers in the field
+            of <strong>transportation infrastructure management</strong>, <strong>health monitoring</strong>, <strong>safety perception</strong>,
+            <strong>risk analysis</strong>, and <strong>network modeling and optimization</strong>. 
+            A graduate of the <strong>University of Illinois at Urbana-Champaign</strong> with a <strong>Ph.D. in Civil Engineering</strong>,
+            Professor Bai’s academic journey began at <strong>Zhejiang University</strong>, where she earned a
+            <strong>Bachelor of Science in Civil Engineering</strong>.
+            Before joining <strong>NJIT</strong>, Professor Bai served as an <strong>Assistant Research Professor</strong> at
+            <strong>Rutgers University</strong> and <strong>HKUST(GZ)</strong> from 2014 to 2022, where she delved into the
+            <strong>management and optimization of transportation infrastructure</strong>. Her research career includes a
+            <em>postdoctoral fellowship</em> at <strong>UIUC</strong> from 2013 to 2014 and an internship as an <strong>Operations Research Analyst</strong>
+            at <strong>Caterpillar Inc.</strong> in 2012.
+        </p>
+    </div>
 
-                </p>
-            </div>
-
-            <style>
-                /* 🔹 招聘信息框样式 */
-                .recruitment-box {
-                    background: rgba(0, 26, 51, 0.8);
-                    /* 深蓝色背景 */
-                    padding: 15px;
-                    border-radius: 10px;
-                    /* 圆角边框 */
-                    border: 2px solid cyan;
-                    /* 亮蓝色边框 */
-                    margin-top: 20px;
-                    text-align: center;
-                    /* 文本居中 */
-                    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
-                    /* 光晕效果 */
-                }
-            </style>
+    <!-- 🔹 招聘信息 -->
+    <div class="container text-center mt-4">
+        <div class="recruitment-box">
+            <h3 class="section-title">🎓 Ph.D. / RA Positions Available!</h3>
+            <p>We are actively recruiting Ph.D. and RA candidates. Please send your resume to <a href="mailto:yunbai@njit.edu">yun.bai@njit.edu</a>.</p>
         </div>
     </div>
 
-
-
     <!-- 🔹 Footer -->
-    <footer class="footer">
+    <footer class="footer mt-4">
         &copy; 2024 Intelligent Transportation Lab - NJIT | All Rights Reserved
     </footer>
 

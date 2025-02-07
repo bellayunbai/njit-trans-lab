@@ -4,37 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Intelligent Transportation Lab - NJIT</title>
+    <title>Our Team | Intelligent Transportation Lab - NJIT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
+        /* 🔹 全局样式 */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0a192f;
-            color: white;
-            overflow-x: hidden;
+            font-family: "Times New Roman", serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
         }
 
-
+        /* 🔹 导航栏 */
         .navbar {
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
+            background-color: #1A237E;
         }
 
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 20px;
+        }
 
+        .nav-link {
+            color: white !important;
+            font-size: 16px;
+        }
+
+        /* 🔹 标题样式 */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #0D47A1;
+        }
+
+        /* 🔹 卡片样式 */
+        .profile-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0D47A1;
+        }
+
+        .profile-research {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .profile-email {
+            font-size: 0.9rem;
+            color: #1A237E;
+            font-weight: bold;
+        }
+
+        /* 🔹 页脚 */
         .footer {
-            background: #000;
+            background: #1A237E;
             padding: 20px;
             text-align: center;
             font-size: 14px;
+            color: white;
         }
     </style>
 </head>
 
 <body>
+
     <!-- 🔹 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">INTR Lab - NJIT</a>
+            <a class="navbar-brand" href="#">Intelligent Transportation Lab - NJIT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,6 +104,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="director.html">Director</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -52,52 +115,64 @@
         </div>
     </nav>
 
+    <br><br>
+
     <!-- 🔹 团队成员 -->
-    <div class="container mt-5 pt-5">
-        <h2 class="text-center text-warning fw-bold mb-5">Meet Our Team</h2>
+    <div class="container mt-5">
+        <h2 class="section-title">Meet Our Team</h2>
 
         <!-- 🔹 教师团队 -->
-        <section class="mb-5">
-            <h3 class="text-info fw-bold border-bottom pb-2">Faculty</h3>
-            <div class="card text-light border-0 shadow-lg mb-4" style="background: #1c2331;">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 text-center p-4">
-                        <img src="img/yunbai.jpg" alt="Prof. Yun Bai" class="img-fluid rounded-circle shadow-lg" style="width: 200px; height: 200px; object-fit: cover;">
-                    </div>
-                    <div class="col-md-8 p-4">
-                        <h4 class="text-info fw-bold">Prof. Yun Bai</h4>
-                        <p class="text-muted">Assistant Professor, NJIT</p>
-                        <p>
-                            Prof. Bai is an Assistant Professor in Intelligent Transportation at NJIT. She was previously an Assistant Research Professor at Rutgers University and holds a Ph.D. in Civil Engineering from UIUC. Her research focuses on data analytics, mathematical modeling, and transportation systems optimization. She has led multiple projects funded by USDA, USDOT, NJDOT, NJ Transit, and published over 20 papers. She serves as an invited member of the TRB AT030 Committee.
-                        </p>
-                    </div>
+        <h3 class="text-primary text-center">Faculty</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="profile-card">
+                    <img src="img/yunbai.jpg" alt="Prof. Yun Bai" class="profile-img">
+                    <h4 class="profile-name">Prof. Yun Bai</h4>
+                    <p class="profile-email">📧 <a href="mailto:yun.bai@njit.edu">yun.bai@njit.edu</a></p>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <br>
 
         <!-- 🔹 学生团队 -->
-        <section>
-            <h3 class="text-info fw-bold border-bottom pb-2">Students</h3>
-            <div class="row">
-                <!-- 🔹 Chenglue Huang -->
-                <div class="col-md-6">
-                    <div class="card text-light border-0 shadow-lg mb-4" style="background: #1c2331;">
-                        <div class="text-center p-4">
-                            <img src="data:image/jpeg;base64,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" alt="Chenglue Huang" class="img-fluid rounded-circle shadow-lg" style="width: 160px; height: 160px; object-fit: cover;">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="text-info text-center">Chenglue Huang</h4>
-                            <p class="text-muted text-center">Ph.D. Student, NJIT</p>
-                            <p class="text-start">
-                                Chenglue is a Ph.D. student in Transportation at NJIT. He earned his MSIS from the University of Pittsburgh. His research focuses on Human-Computer Interaction, Natural Language Processing, and Knowledge Graphs. Outside of academia, he is passionate about fencing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <h3 class="text-primary text-center mt-4">Students</h3>
+        <div class="row justify-content-center text-center">
 
-                <!-- 🔹 未来可扩展更多学生 -->
+            <!-- 🔹 Chenglin Chen -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="https://hkust-trans-lab.github.io/team/chenchenglin.jpg" alt="Chenglin Chen" class="profile-img">
+                    <h4 class="profile-name">Chenglin Chen</h4>
+                    <p class="profile-research">Deep Learning, Image Processing, SLAM</p>
+                    <p class="profile-email">📧 <a
+                            href="mailto:cchen363@connect.hkust-gz.edu.cn">cchen363@connect.hkust-gz.edu.cn</a></p>
+                </div>
             </div>
-        </section>
+
+            <!-- 🔹 Chenglue Huang -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="https://nadu-pitt.github.io/images/Profile/Huang.png" alt="Chenglue Huang" class="profile-img">
+                    <h4 class="profile-name">Chenglue Huang</h4>
+                    <p class="profile-research">Human-Computer Interaction, Natural Language Processing, Knowledge Graphs</p>
+                    <p class="profile-email">📧 <a href="mailto:ch449@njit.edu">ch449@njit.edu</a></p>
+                </div>
+            </div>
+
+            <!-- 🔹 Ruohui Zhang -->
+            <div class="col-md-3">
+                <div class="profile-card">
+                    <img src="https://hkust-trans-lab.github.io/team/zhangruohui.jpg" alt="Ruohui Zhang" class="profile-img">
+                    <h4 class="profile-name">Ruohui Zhang</h4>
+                    <p class="profile-research">Traffic Planning, Network Modelling, Track Detection</p>
+                    <p class="profile-email">📧 <a
+                            href="mailto:rzhang856@connect.hkust-gz.edu.cn">rzhang856@connect.hkust-gz.edu.cn</a></p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <!-- 🔹 Footer -->
@@ -105,9 +180,8 @@
         &copy; 2024 Intelligent Transportation Lab - NJIT | All Rights Reserved
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 
 </html>

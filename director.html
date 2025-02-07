@@ -6,23 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intelligent Transportation Lab - NJIT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
+        /* 🔹 全局样式 */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0a192f;
-            color: white;
-            overflow-x: hidden;
+            font-family: "Times New Roman", serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
         }
 
-
+        /* 🔹 导航栏 */
         .navbar {
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
+            background-color: #1A237E;
         }
 
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 20px;
+        }
 
+        .nav-link {
+            color: white !important;
+            font-size: 16px;
+        }
+
+        /* 🔹 页面结构 */
+        .container {
+            max-width: 1100px;
+        }
+
+        /* 🔹 标题样式 */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1A237E;
+            border-bottom: 2px solid #1A237E;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* 🔹 个人信息 */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #1A237E;
+        }
+
+        /* 🔹 主要内容排版 */
+        .card {
+            border: none;
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* 🔹 联系方式 */
+        .contact-box {
+            background: #E3E3E3;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .email-link {
+            color: #1A237E;
+            font-weight: bold;
+        }
+
+        /* 🔹 页脚 */
         .footer {
-            background: #000;
+            background-color: #1A237E;
+            color: white;
             padding: 20px;
             text-align: center;
             font-size: 14px;
@@ -35,7 +91,7 @@
     <!-- 🔹 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">INTR Lab - NJIT</a>
+            <a class="navbar-brand" href="#">Intelligent Transportation Lab - NJIT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,6 +99,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="director.html">Director</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -55,13 +112,14 @@
 
     <!-- 🔹 个人信息 -->
     <div class="container mt-5 pt-5">
-        <div class="row align-items-center text-center">
-            <div class="col-md-4">
-                <img src="img/yunbai.jpg" alt="Yun Bai" class="img-fluid rounded-circle border border-info p-2" width="200">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img src="img/yunbai.jpg" alt="Yun Bai" class="profile-img">
             </div>
-            <div class="col-md-8 text-md-start">
-                <h2 class="text-light">Yun Bai</h2>
-                <h4 class="text-info">Assistant Professor, New Jersey Institute of Technology (NJIT)</h4>
+            <div class="col-md-9 text-md-start">
+                <h2 class="text-dark">Yun Bai</h2>
+                <h4 class="text-muted">Assistant Professor</h4>
+                <h4 class="text-muted">New Jersey Institute of Technology (NJIT)</h4>
             </div>
         </div>
     </div>
@@ -71,75 +129,58 @@
     <!-- 🔹 主要信息区域 -->
     <div class="container">
         <div class="row">
-            <!-- 🔹 左侧信息 -->
             <div class="col-md-6">
-                <div class="card bg-dark text-light mb-3 p-3">
-                    <div class="card-body">
-                        <h3 class="text-warning">Education</h3>
-                        <ul class="list-unstyled">
-                            <li><strong>Ph.D.</strong> in Civil Engineering, University of Illinois Urbana-Champaign (UIUC), 2013</li>
-                            <li><strong>M.S.</strong> in Civil Engineering, University of Illinois Urbana-Champaign (UIUC), 2010</li>
-                            <li><strong>B.S.</strong> in Civil Engineering, Zhejiang University, 2008</li>
-                        </ul>
-                    </div>
+                <div class="card">
+                    <h3 class="section-title">Education</h3>
+                    <ul>
+                        <li>Ph.D. in Civil Engineering, University of Illinois Urbana-Champaign (2013)</li>
+                        <li>M.S. in Civil Engineering, University of Illinois Urbana-Champaign (2010)</li>
+                        <li>B.S. in Civil Engineering, Zhejiang University (2008)</li>
+                    </ul>
                 </div>
 
-                <div class="card bg-dark text-light mb-3 p-3">
-                    <div class="card-body">
-                        <h3 class="text-warning">Academic / Professional Appointments</h3>
-                        <ul class="list-unstyled">
-                            <li><strong>Assistant Research Professor</strong>, NJIT (2025 - persent)</li>
-                            <li><strong>Assistant Research Professor</strong>, HKUST(GZ) (2019 - 2024)</li>
-                            <li><strong>Assistant Research Professor</strong>, Rutgers University (2019 - Present)</li>
-                            <li><strong>Research Associate</strong>, Rutgers University (2014 – 2019)</li>
-                            <li><strong>Postdoctoral Research Associate</strong>, UIUC (2013 - 2014)</li>
-                            <li><strong>Operations Research Analyst (Intern)</strong>, Caterpillar Inc.</li>
-                            <li><strong>Graduate Research Assistant</strong>, UIUC (2008 - 2011)</li>
-                        </ul>
-                    </div>
+                <div class="card">
+                    <h3 class="section-title">Academic Appointments</h3>
+                    <ul>
+                        <li>Assistant Professor, NJIT (2025 - Present)</li>
+                        <li>Assistant Research Professor, HKUST(GZ) (2019 - 2024)</li>
+                        <li>Assistant Research Professor, Rutgers University (2019 - 2024)</li>
+                        <li>Postdoctoral Research Associate, UIUC (2013 - 2014)</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 🔹 右侧信息 -->
             <div class="col-md-6">
-                <div class="card bg-dark text-light mb-3 p-3">
-                    <div class="card-body">
-                        <h3 class="text-warning">Academic Committees</h3>
-                        <ul class="list-unstyled">
-                            <li>Committee Member, TRB Agricultural & Food Transportation (AT030)</li>
-                            <li>Editorial Board Member, Journal of Intelligent Transportation Infrastructure</li>
-                        </ul>
-                    </div>
+                <div class="card">
+                    <h3 class="section-title">Research Areas</h3>
+                    <ul>
+                        <li><strong>Smart & Resilient Transportation Infrastructure Management</strong> (Big data
+                            analytics, stochastic modeling, simulation, optimization, risk analysis, economic analysis)
+                        </li>
+                        <li><strong>Intelligent & Sustainable Multimodal Transportation Systems</strong> (Game theory,
+                            mechanism design, optimization, stochastic analysis, network modeling)</li>
+
+
+                    </ul>
                 </div>
 
-                <div class="card bg-dark text-light mb-3 p-3">
-                    <div class="card-body">
-                        <h3 class="text-warning">Research Areas</h3>
-                        <ul class="list-unstyled">
-                            <li><strong>Smart & Resilient Transportation Infrastructure Management</strong></li>
-                            <p class="text-info">
-                                Application of big data analytics, stochastic modeling, simulation, optimization, risk analysis, and economic analysis 
-                            </p>
-                            <li><strong>Intelligent & Sustainable Multimodal Transportation Systems</strong></li>
-                            <p class="text-info">
-                                Utilizing game theory, mechanism design, optimization, stochastic analysis, and network modeling
-                            </p>
-                        </ul>
-                    </div>
+                <div class="card">
+                    <h3 class="section-title">Academic Committees</h3>
+                    <ul>
+                        <li>Committee Member, TRB Agricultural & Food Transportation (AT030)</li>
+                        <li>Editorial Board, Journal of Intelligent Transportation Infrastructure</li>
+                    </ul>
                 </div>
-                
             </div>
         </div>
     </div>
 
     <!-- 🔹 联系方式 -->
     <div class="container text-center mt-4">
-        <div class="card bg-dark text-light p-3">
-            <div class="card-body">
-                <h3 class="text-warning">Contact</h3>
-                <p><strong>📧 Email:</strong> <a href="mailto:yun.bai@njit.edu" class="text-light">yun.bai@njit.edu</a></p>
-                <p><strong>📍 Address:</strong> 323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102</p>
-            </div>
+        <div class="contact-box">
+            <h3 class="section-title">Contact</h3>
+            <p>Email: <a href="mailto:yunbai@njit.edu" class="email-link">yun.bai@njit.edu</a></p>
+            <p>Address: 323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102</p>
         </div>
     </div>
 
@@ -152,7 +193,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
-
 
 </html>

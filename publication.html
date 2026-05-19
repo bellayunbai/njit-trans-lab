@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* 🔹 全局样式 */
         body {
             font-family: "Times New Roman", serif;
             background-color: #f5f5f5;
@@ -16,16 +15,15 @@
             line-height: 1.8;
         }
 
-        /* 🔹 导航栏 */
         .navbar {
-            background-color: #ffffff !important; /* 白色背景 */
+            background-color: #ffffff !important;
             border-bottom: 2px solid #ddd;
         }
 
         .navbar-brand {
             font-weight: bold;
             font-size: 20px;
-            color: #1A237E !important; /* 深蓝色文字 */
+            color: #1A237E !important;
             display: flex;
             align-items: center;
         }
@@ -36,11 +34,10 @@
         }
 
         .nav-link {
-            color: #1A237E !important; /* 深蓝色导航链接 */
+            color: #1A237E !important;
             font-size: 16px;
         }
 
-        /* 🔹 标题 */
         .section-title {
             text-align: center;
             font-size: 2rem;
@@ -58,7 +55,6 @@
             padding-bottom: 5px;
         }
 
-        /* 🔹 论文卡片 */
         .publication-card {
             background: white;
             border: 1px solid #ddd;
@@ -74,8 +70,8 @@
 
         .card-body p {
             padding: 10px;
-            margin-bottom: 0;        
-            line-height: 1.3;          
+            margin-bottom: 0;
+            line-height: 1.3;
         }
 
         .card-title {
@@ -84,7 +80,6 @@
             color: #0D47A1;
         }
 
-        /* 🔹 页脚 */
         .footer {
             background: #1A237E;
             padding: 20px;
@@ -97,10 +92,8 @@
 
 <body>
 
-    <!-- 🔹 导航栏 -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <!-- ✅ 插入 logo (jpg) -->
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.jpg" alt="Lab Logo">
                 Transportation Infrastructure Lab - NJIT
@@ -125,111 +118,142 @@
 
     <br><br>
 
-    <!-- 🔹 论文发表 -->
     <section class="container mt-5">
         <h2 class="section-title">Publications</h2>
 
-        <!-- 📌 2025 -->
-        <h3 class="publication-year">📅 2025</h3>
+        <h3 class="publication-year">Submitted Journal Papers</h3>
         <div class="row">
             <div class="col-12">
-                <a href="#" target="_blank" class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Onboard Metro Train Localization Based on the Train Motion and Track Geometry Features Fusion</h5>
-                            <p>R. Zhang, Z. Lai, H. Tang, <strong>Yun Bai*</strong></p>
-                            <p><em>IEEE Transactions on ITS</em>, Under Review</p>
-                        </div>
+                <div class="card publication-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Maritime Asset Management System (MAMS) For Strategic Dredging Planning and Dredged Material Management</h5>
+                        <p><strong>Bai, Y.</strong>, Bian, Z., Qin, H., Huang, Z.</p>
+                        <p><em>Transportation Research Record</em>, submitted</p>
                     </div>
-                </a>
+                </div>
             </div>
+
             <div class="col-12">
-                <a href="https://ieeexplore.ieee.org/abstract/document/10879340" target="_blank" class="text-decoration-none">
+                <a href="https://arxiv.org/abs/2402.12968" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Railway Side Slope Hazard Detection System Based on Generative Models
-                            </h5>
-                            <p>Xinyu Zheng, Yangfan He, Yuhao Luo, Lingfeng Zhang, Jianhui Wang, Tianyu Shi,
-                                <strong>Bai, Y.*</strong>
-                            </p>
-                            <p><em>IEEE Sensors Journal</em> (Accepted)</p>
+                            <h5 class="card-title">MapTrack: Robust Multi-Object Tracking Method with Probability and Prediction Maps</h5>
+                            <p>Wang, F., Wang, J., <strong>Bai, Y.</strong>, Zhang, R., Shi, C., Gao, R.</p>
+                            <p><em>Signal Processing</em>, submitted. Public preprint: <em>arXiv:2402.12968</em></p>
                         </div>
                     </div>
                 </a>
             </div>
 
             <div class="col-12">
-                <a href="https://ieeexplore.ieee.org/document/XXXXXX" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.2139/ssrn.6137169" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Real-time Railway Obstacle Detection Based on Multitask Perception
-                                Learning</h5>
-                            <p>Chenglin Chen, Huixiong Qin, <strong>Bai, Y.*</strong></p>
-                            <p><em>IEEE Transactions on ITS</em> (Accepted)</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="https://ascelibrary.org/doi/10.1061/(ASCE)IS.XXXXXXX" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Multisource Data-Driven Approach for Predicting the Deterioration of
-                                High Mast Light Poles</h5>
-                            <p>Xin Wang, <strong>Bai, Y.*</strong></p>
-                            <p><em>ASCE Journal of Infrastructure Systems</em>, 31(1), 04024036</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">MapTrack: Tracking in the Map</h5>
-                            <p>F. Wang, <strong>Yun Bai*</strong></p>
-                            <p><em>IEEE Transactions on Multimedia</em>, Working Paper. <em>arXiv preprint arXiv:2402.12968</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">A Multi-Head Neural Network Based on Autoencoder for Predicting the Deterioration of Sign Structures along Highways</h5>
-                            <p>Xin Wang, <strong>Yun Bai*</strong></p>
-                            <p><em>Structure and Infrastructure Engineering</em>, Under Review</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Study on Deterioration Mechanism of Concrete Bridge Decks Based on Survival Analysis: Analysis and Application of NBE Data</h5>
-                            <p>M. Yang, Xin Wang, <strong>Yun Bai*</strong></p>
-                            <p><em>Transportation Research Record</em>, Under Review</p>
+                            <h5 class="card-title">A Novel Low-Cost Approach for Intelligent Obstacle Detection in Freight Railway Environment</h5>
+                            <p>Zhang, R., Chen, C., Zheng, X., <strong>Bai, Y.</strong>, Jing, G.</p>
+                            <p><em>Measurement</em>, submitted. Public preprint: <em>SSRN</em></p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!-- 📌 2024 -->
-        <h3 class="publication-year">📅 2024</h3>
+        <h3 class="publication-year">2026</h3>
         <div class="row">
             <div class="col-md-6">
-                <a href="https://academic.oup.com/xxxxxxx" target="_blank" class="text-decoration-none">
+                <div class="card publication-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Study on Deterioration Mechanism of Concrete Bridge Decks Based on Survival Analysis: Analysis and Application of NBE Data</h5>
+                        <p>Yang, M., &amp; <strong>Bai, Y.</strong></p>
+                        <p><em>Transportation Research Record</em>, published</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1061/JITSE4.ISENG-2710" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Efficient Lightweight Railway Track Segmentation Network</h5>
-                            <p>Chenglin Chen, Fei Wang, Min Yang, Yong Qin, <strong>Yun Bai*</strong></p>
+                            <h5 class="card-title">Multisource Data Fusion Approach for Predicting the Deterioration of Sign Structures along Highways</h5>
+                            <p>Wang, X., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>ASCE Journal of Infrastructure Systems</em>, 32(1), 04025046</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1016/j.measurement.2025.119257" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Developments, Challenges, and Perspectives of Rail Corrugation Inspection: A Review</h5>
+                            <p>Zhang, R., Han, L., Li, S., <strong>Bai, Y.</strong>, Lai, Z., &amp; Jing, G.</p>
+                            <p><em>Measurement</em>, 258, 119257</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="publication-year">2025</h3>
+        <div class="row">
+            <div class="col-12">
+                <a href="https://doi.org/10.1109/TITS.2025.3571433" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Onboard Metro Train Localization Based on the Train Motion and Track Geometry Feature Fusion</h5>
+                            <p>Zhang, R., Chen, C., Tang, H., Qin, Y., Lai, Z., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>IEEE Transactions on Intelligent Transportation Systems</em>, 26(10), 16275-16290</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="https://doi.org/10.1109/JSEN.2025.3538529" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Railway Side Slope Hazard Detection System Based on Generative Models</h5>
+                            <p>Zheng, X., He, Y., Luo, Y., Zhang, L., Wang, J., Shi, T., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>IEEE Sensors Journal</em>, 25(9), 16281-16296</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="https://doi.org/10.1109/TITS.2025.3536024" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-Time Railway Obstacle Detection Based on Multitask Perception Learning</h5>
+                            <p>Chen, C., Qin, H., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>IEEE Transactions on Intelligent Transportation Systems</em>, 26(5), 7142-7155</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1061/JITSE4.ISENG-2477" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Multisource Data-Driven Approach for Predicting the Deterioration of High Mast Light Poles along Highways</h5>
+                            <p>Wang, X., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>ASCE Journal of Infrastructure Systems</em>, 31(1), 04024036</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="publication-year">2024</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1093/iti/liae009" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Efficient Lightweight Railway Track Segmentation Network for Resource-Constrained Platforms with TensorRT</h5>
+                            <p>Chen, C., Wang, F., Yang, M., Qin, Y., &amp; <strong>Bai, Y.</strong></p>
                             <p><em>Intelligent Transportation Infrastructure</em>, liae009</p>
                         </div>
                     </div>
@@ -237,11 +261,11 @@
             </div>
 
             <div class="col-md-6">
-                <a href="https://ieeexplore.ieee.org/document/10541211" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1109/DAS61944.2024.10541211" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Exploration of Vision-based Railway Turnout Recognition</h5>
-                            <p>Chenglin Chen, Huixiong Qin, <strong>Bai, Y.*</strong></p>
+                            <h5 class="card-title">Exploration of Vision-Based Railway Turnout Recognition and Application</h5>
+                            <p>Chen, C., Qin, H., &amp; <strong>Bai, Y.</strong></p>
                             <p><em>2024 International Conference on Development and Application Systems</em></p>
                         </div>
                     </div>
@@ -249,396 +273,356 @@
             </div>
 
             <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0306261924001234" target="_blank"
-                    class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.apenergy.2024.123357" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Prediction of the Temperature of Diesel Engine Oil in Railroad
-                                Locomotives</h5>
-                            <p>Xin Wang, <strong>Bai, Y.*</strong></p>
-                            <p><em>Applied Energy</em>, Volume 367, 123357</p>
+                            <h5 class="card-title">Prediction of the Temperature of Diesel Engine Oil in Railroad Locomotives Using Compressed Information-Based Data Fusion Method with Attention-Enhanced CNN-LSTM</h5>
+                            <p>Wang, X., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>Applied Energy</em>, 367, 123357</p>
                         </div>
                     </div>
                 </a>
             </div>
 
             <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0306261924001234" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Prediction of Railroad Track Geometry Change Using a Hybrid CNN-LSTM
-                                Model</h5>
-                            <p>Xin Wang, <strong>Bai, Y.*</strong>, Xiang Liu</p>
-                            <p><em>Advanced Engineering Informatics</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0306261924001234" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Risk-Based Transportation Infrastructure Management</h5>
-                            <p>Ruohui Zhang, Junyan Dai, <strong>Bai, Y.*</strong>, Daniel Barone, Lauren Hill-Beaton
-                            </p>
-                            <p><em>Ocean & Coastal Management</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- 📌 2023 -->
-        <h3 class="publication-year">📅 2023</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S147403462300XXXX" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Prediction of Railroad Track Geometry Change Using a Hybrid CNN-LSTM
-                                Model</h5>
-                            <p>Xin Wang, <strong>Yun Bai*</strong>, Xiang Liu</p>
-                            <p><em>Advanced Engineering Informatics</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S096456912300XXXX" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Risk-Based Transportation Infrastructure Management</h5>
-                            <p>Ruohui Zhang, Junyan Dai, <strong>Yun Bai*</strong>, Daniel Barone, Lauren Hill-Beaton
-                            </p>
-                            <p><em>Ocean & Coastal Management</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S096456912300XXXX" target="_blank"
-                    class="text-decoration-none">
+                <a href="https://doi.org/10.1177/03611981231175156" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Artificial Intelligence Aided Crowd Analytics in Rail Transit Station</h5>
-                            <p>Zhu, Y., Li, X., Zaman, A.,  <strong>Yun Bai*</strong>, & Liu, X.
-                            </p>
-                            <p><em>Transportation Research Record</em></p>
+                            <p>Zhu, Y., Ni, K., Li, X., Zaman, A., Liu, X., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>Transportation Research Record</em>, 2678(2), 481-492</p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!-- 📌 2022 -->
-        <h3 class="publication-year">📅 2022</h3>
+        <h3 class="publication-year">2023</h3>
         <div class="row">
             <div class="col-md-6">
-                <a href="https://rutgers.edu/research/mams" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.aei.2023.102235" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Enhanced Maritime Asset Management System (MAMS)</h5>
-                            <p><strong>Yun Bai*</strong>, Zheyong Bian, Zhe Huang, Huixiong Qin, Hooman Parvardeh</p>
-                            <p><em>Rutgers University</em></p>
+                            <h5 class="card-title">Prediction of Railroad Track Geometry Change Using a Hybrid CNN-LSTM Spatial-Temporal Model</h5>
+                            <p>Wang, X., <strong>Bai, Y.</strong>, &amp; Liu, X.</p>
+                            <p><em>Advanced Engineering Informatics</em>, 58, 102235</p>
                         </div>
                     </div>
                 </a>
             </div>
 
             <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2200XXXX" target="_blank"
-                    class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.ocecoaman.2023.106723" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">An Online Hybrid Mechanism for Dynamic First-Mile Ridesharing Service
-                            </h5>
-                            <p>Zheyong Bian, <strong>Yun Bai*</strong>, Xiang Liu, Bijun Wang</p>
-                            <p><em>Transportation Research Part C</em></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2200XXXX" target="_blank"
-                    class="text-decoration-none">
-                    <div class="card publication-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Artificial Intelligence Aided Crowd Analytics in Rail Transit Station
-                            </h5>
-                            <p>13.	Zhu, Y., Li, X., Zaman, A., <strong>Yun Bai*</strong>, Xiang Liu</p>
-                            <p><em>Transportation Research Record</em></p>
+                            <h5 class="card-title">Risk-Based Transportation Infrastructure Management: An Integrated Framework and Case Study in USVI Against Coastal Flood and Sea Level Rise</h5>
+                            <p>Zhang, R., Dai, J., <strong>Bai, Y.</strong>, Barone, D., &amp; Hill-Beaton, L.</p>
+                            <p><em>Ocean &amp; Coastal Management</em>, 242, 106723</p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <!-- 📚 Past Publications -->
-        <h3 class="publication-year">📚 Past Publications</h3>
+        <h3 class="publication-year">2022</h3>
         <div class="row">
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.tre.2022.102618" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Transportation Infrastructure Asset Management Using Markov Decision Process</h5>
-                            <p><strong>Yun Bai*</strong>, Saeed Babanajad, Zheyong Bian</p>
+                            <h5 class="card-title">Multi-Year Planning for Optimal Navigation Channel Dredging and Dredged Material Management</h5>
+                            <p>Bian, Z., <strong>Bai, Y.</strong>, Douglas, W. S., Maher, A., &amp; Liu, X.</p>
+                            <p><em>Transportation Research Part E: Logistics and Transportation Review</em>, 159, 102618</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1016/j.trc.2022.103585" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">An Online Hybrid Mechanism for Dynamic First-Mile Ridesharing Service</h5>
+                            <p>Bian, Z., <strong>Bai, Y.</strong>, Liu, X., &amp; Wang, B.</p>
+                            <p><em>Transportation Research Part C: Emerging Technologies</em>, 138, 103585</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="publication-year">Past Publications</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://doi.org/10.1108/SRT-11-2020-0026" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                    <div class="card publication-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Transportation Infrastructure Asset Management Modeling Using Markov Decision Process Under Epistemic Uncertainties</h5>
+                            <p><strong>Bai, Y.</strong>, Babanajad, S., &amp; Bian, Z.</p>
                             <p><em>Smart and Resilient Transportation</em>, 3(3), 249-265 (2021)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.trb.2020.03.011" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Mechanism Design for On-Demand First-Mile Ridesharing</h5>
-                            <p>Zheyong Bian, Xiaoyue Liu, <strong>Yun Bai*</strong></p>
+                            <p>Bian, Z., Liu, X., &amp; <strong>Bai, Y.</strong></p>
                             <p><em>Transportation Research Part B: Methodological</em>, 138, 77-117 (2020)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.jclepro.2019.119434" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Evaluation and Governance of Green Development Practice of Port: A Sea Port Case of China</h5>
-                            <p>Chunhua Hua, Jianhua Chen, Zhihong Wan, Lichun Xu, <strong>Yun Bai*</strong>, Tao Zheng, Yifan Fei</p>
+                            <p>Hua, C., Chen, J., Wan, Z., Xu, L., <strong>Bai, Y.</strong>, Zheng, T., &amp; Fei, Y.</p>
                             <p><em>Journal of Cleaner Production</em>, 249, 119434 (2020)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.envpol.2019.113582" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Factor Diagnosis and Future Governance of Dangerous Goods Accidents in China's Ports</h5>
-                            <p>Jianhua Chen, Hong Zheng, Lihua Wei, Zhihong Wan, Rui Ren, Jie Li, <strong>Yun Bai*</strong></p>
+                            <p>Chen, J., Zheng, H., Wei, L., Wan, Z., Ren, R., Li, J., &amp; <strong>Bai, Y.</strong></p>
                             <p><em>Environmental Pollution</em>, 257, 113582 (2020)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1111/grow.12410" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Spatial Evaluation of Knowledge Spillover Benefits in China’s Free Trade Zone Provinces and Cities</h5>
-                            <p>Hao Li, Jianhua Chen, Zhihong Wan, Huajun Zhang, Min Wang, <strong>Yun Bai*</strong></p>
+                            <h5 class="card-title">Spatial Evaluation of Knowledge Spillover Benefits in China's Free Trade Zone Provinces and Cities</h5>
+                            <p>Li, H., Chen, J., Wan, Z., Zhang, H., Wang, M., &amp; <strong>Bai, Y.</strong></p>
                             <p><em>Growth and Change</em>, 51(3), 1158-1181 (2020)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.egyr.2020.02.017" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Crude Oil Maritime Transportation: Market Fluctuation Characteristics and the Impact of Critical Events</h5>
-                            <p>Yifan Fei, Jianhua Chen, Zhihong Wan, Yujie Shu, Lichun Xu, Hao Li, <strong>Yun Bai*</strong>, Tao Zheng</p>
+                            <p>Fei, Y., Chen, J., Wan, Z., Shu, Y., Xu, L., Li, H., <strong>Bai, Y.</strong>, &amp; Zheng, T.</p>
                             <p><em>Energy Reports</em>, 6, 518-529 (2020)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1177/0361198118781396" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Life Cycle Assessment Framework for US Bridge Inventory</h5>
-                            <p>Saeed Babanajad, <strong>Yun Bai*</strong>, Herbert Wenzel, Michael Wenzel, Hamid Parvardeh, Alireza Rezvani, Robert Zobel, Frank Moon, Anthony Maher</p>
-                            <p><em>Transportation Research Record</em>, 2672(12), 82–92 (2018)</p>
+                            <h5 class="card-title">Life Cycle Assessment Framework for the U.S. Bridge Inventory</h5>
+                            <p>Babanajad, S., <strong>Bai, Y.</strong>, Wenzel, H., Wenzel, M., Parvardeh, H., Rezvani, A., Zobel, R., Moon, F., &amp; Maher, A.</p>
+                            <p><em>Transportation Research Record</em>, 2672(12), 82-92 (2018)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.3141/2611-03" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Transportation Cost Modeling of Containerized Soybean Exports in United States</h5>
-                            <p><strong>Yun Bai</strong>, Xiaoyue Liu, Christopher Higgins, Yafeng Chiu, Jianhua Chen</p>
+                            <h5 class="card-title">Transportation Cost Modeling of Containerized Soybean Exports in the United States</h5>
+                            <p><strong>Bai, Y.</strong>, Liu, X., Higgins, C., Chiu, Y., &amp; Chen, J.</p>
                             <p><em>Transportation Research Record</em>, 2611, 19-31 (2017)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.joes.2017.05.001" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">An Intermodal Transportation Geospatial Network Modeling for Containerized Soybean Shipping</h5>
-                            <p>Xiaoyue Liu, <strong>Yun Bai*</strong>, Jianhua Chen</p>
+                            <p>Liu, X., <strong>Bai, Y.</strong>, &amp; Chen, J.</p>
                             <p><em>Journal of Ocean Engineering and Science</em>, 2(2), 143-153 (2017)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.ejor.2015.08.027" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Enhanced Models and Improved Solution for Competitive Biofuel Supply Chain Design Under Land Use Constraints</h5>
-                            <p><strong>Yun Bai*</strong>, Yanfeng Ouyang, Jong-Shi Pang</p>
+                            <p><strong>Bai, Y.</strong>, Ouyang, Y., &amp; Pang, J.-S.</p>
                             <p><em>European Journal of Operational Research</em>, 249(1), 281-297 (2016)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.biosystemseng.2016.08.011" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Grain Supply Chain Network Design and Logistics Planning for Reducing Post-Harvest Loss</h5>
-                            <p>S.M. Nourbakhsh, <strong>Yun Bai*</strong>, Yanfeng Ouyang, Luis Rodriguez</p>
+                            <p>Nourbakhsh, S. M., <strong>Bai, Y.</strong>, Maia, G. D. N., Ouyang, Y., &amp; Rodriguez, L.</p>
                             <p><em>Biosystems Engineering</em>, 151, 105-115 (2016)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.3390/en8021468" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Effects of Disruption Risks on Reliable Biorefinery Location Design</h5>
-                            <p><strong>Yun Bai</strong>, Xiaodong Li, Fei Peng, Xiaowei Wang, Yanfeng Ouyang</p>
+                            <h5 class="card-title">Effects of Disruption Risks on Biorefinery Location Design</h5>
+                            <p><strong>Bai, Y.</strong>, Li, X., Peng, F., Wang, X., &amp; Ouyang, Y.</p>
                             <p><em>Energies</em>, 8(2), 1468-1486 (2015)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.trc.2015.05.021" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Parking Space Management via Dynamic Performance-Based Pricing</h5>
-                            <p>Daniel Mackowski, <strong>Yun Bai*</strong>, Yanfeng Ouyang</p>
+                            <p>Mackowski, D., <strong>Bai, Y.</strong>, &amp; Ouyang, Y.</p>
                             <p><em>Transportation Research Part C: Emerging Technologies</em>, 59, 66-91 (2015)</p>
-                            <p>(Also published in <em>Transportation Research Procedia</em>, 7, 170-191 and in <em>Proceedings of 21st International Symposium on Transportation and Traffic Theory (ISTTT)</em>, August 2015)</p>
+                            <p>Also published in <em>Transportation Research Procedia</em>, 7, 170-191 and in <em>Proceedings of 21st International Symposium on Transportation and Traffic Theory (ISTTT)</em>, August 2015</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.tre.2015.07.006" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Reliable Facility Location Design Under Service Disruption, En-Route Congestion and In-Facility Waiting</h5>
-                            <p>Shuo An, Ning Cui, <strong>Yun Bai*</strong>, Wei Xie, Min Chen, Yanfeng Ouyang</p>
+                            <h5 class="card-title">Reliable Emergency Service Facility Location Under Facility Disruption, En-Route Congestion and In-Facility Queuing</h5>
+                            <p>An, S., Cui, N., <strong>Bai, Y.</strong>, Xie, W., Chen, M., &amp; Ouyang, Y.</p>
                             <p><em>Transportation Research Part E: Logistics and Transportation Review</em>, 82, 199-216 (2015)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1007/s13676-014-0072-2" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Optimal Pavement Design and Rehabilitation Using a Mechanistic-Empirical (ME) Approach</h5>
-                            <p><strong>Yun Bai</strong>, Emre O. Gungor, Jose A. Hernandez, Yanfeng Ouyang, Imad L. Al-Qadi</p>
-                            <p><em>Euro Journal on Transportation and Logistics</em>, 2192-4376, 1-17 (2015)</p>
+                            <h5 class="card-title">Optimal Pavement Design and Rehabilitation Planning Using a Mechanistic-Empirical Approach</h5>
+                            <p><strong>Bai, Y.</strong>, Gungor, O. E., Hernandez, J., Ouyang, Y., &amp; Al-Qadi, I. L.</p>
+                            <p><em>EURO Journal on Transportation and Logistics</em>, 4, 57-73 (2015)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.3141/2467-10" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Integrated Planning of Tourism Investment and Transportation Network Design</h5>
-                            <p><strong>Yun Bai</strong>, Shuo An, Xiaoyu Kou, Yanfeng Ouyang, Jian Wang, Xiaoqing Zhou</p>
-                            <p><em>Transportation Research Record</em>, No. 2467, pp. 91–100 (2014)</p>
+                            <p><strong>Bai, Y.</strong>, Kou, X., An, S., Ouyang, Y., Wang, J., &amp; Zhu, X.</p>
+                            <p><em>Transportation Research Record</em>, 2467, 91-100 (2014)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1061/(ASCE)IS.1943-555X.0000238" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">System of Systems Model for Biofuel Development Analysis</h5>
-                            <p>Matthew Housh, T.L. Ng, Ximing Cai, Gregory McIsaac, Yanfeng Ouyang, Madhu Khanna, Selvarasu Murugesu, Atul Jain, Scott Eckhoff, Stephen Gasteyer, <strong>Yun Bai*</strong>, Michael Yaeger, Lili Li, Shuo Ma, Yao Song</p>
-                            <p><em>Journal of Infrastructure Systems, ASCE</em>, 04014050 (2014)</p>
+                            <h5 class="card-title">System of Systems Model for Analysis of Biofuel Development</h5>
+                            <p>Housh, M., Ng, T. L., Cai, X., McIsaac, G. F., Ouyang, Y., Khanna, M., Sivapalan, M., Jain, A. K., Eckhoff, S., Gasteyer, S., <strong>Bai, Y.</strong>, Yaeger, M., Li, L., Ma, S., &amp; Song, Y.</p>
+                            <p><em>Journal of Infrastructure Systems</em>, 21(3), 04014050 (2015)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.trb.2014.02.003" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Joint Optimization of Supply Chain Network Design and Highway Pavement Rehabilitation Plan Under Traffic Equilibrium</h5>
-                            <p>Leila Hajibabai, <strong>Yun Bai*</strong>, Yanfeng Ouyang</p>
+                            <h5 class="card-title">Joint Optimization of Freight Facility Location and Pavement Infrastructure Rehabilitation Under Network Traffic Equilibrium</h5>
+                            <p>Hajibabai, L., <strong>Bai, Y.</strong>, &amp; Ouyang, Y.</p>
                             <p><em>Transportation Research Part B: Methodological</em>, 63, 38-52 (2014)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.trb.2013.07.008" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Optimal Biofuel Supply Chain Design Under Consumption Mandates with Renewable Identification Numbers</h5>
-                            <p>Xiaowei Wang, Yanfeng Ouyang, Hai Yang, <strong>Yun Bai*</strong></p>
-                            <p><em>Transportation Research Part B: Methodological</em>, 57, 158–171 (2013)</p>
+                            <p>Wang, X., Ouyang, Y., Yang, H., &amp; <strong>Bai, Y.</strong></p>
+                            <p><em>Transportation Research Part B: Methodological</em>, 57, 158-171 (2013)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.eneco.2012.01.003" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Biofuel Supply Chain Design Under Competitive Agricultural Land Use and Feedstock Market Equilibrium</h5>
-                            <p><strong>Yun Bai</strong>, Yanfeng Ouyang, Jong-Shi Pang</p>
+                            <p><strong>Bai, Y.</strong>, Ouyang, Y., &amp; Pang, J.-S.</p>
                             <p><em>Energy Economics</em>, 34(5), 1623-1633 (2012)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1016/j.trb.2010.04.006" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
                             <h5 class="card-title">Biofuel Refinery Location and Supply Chain Planning Under Traffic Congestion</h5>
-                            <p><strong>Yun Bai</strong>, Taehoon Hwang, Sunghoon Kang, Yanfeng Ouyang</p>
-                            <p><em>Transportation Research Part B: Methodological</em>, 45(1), 162–175 (2011)</p>
+                            <p><strong>Bai, Y.</strong>, Hwang, T., Kang, S., &amp; Ouyang, Y.</p>
+                            <p><em>Transportation Research Part B: Methodological</em>, 45(1), 162-175 (2011)</p>
                         </div>
                     </div>
                 </a>
             </div>
+
             <div class="col-md-6">
-                <a href="#" target="_blank" class="text-decoration-none">
+                <a href="https://doi.org/10.1007/978-3-319-20092-7_10" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                     <div class="card publication-card">
                         <div class="card-body">
-                            <h5 class="card-title">Biofuel Supply Chain Design and the Impacts on Transportation Infrastructure</h5>
-                            <p><strong>Yun Bai</strong>, Yanfeng Ouyang</p>
-                            <p><em>Handbook of Bioenergy: Bioenergy Supply Chain - Models and Applications</em> (pp. 235-266), Springer International Publishing (2015)</p>
+                            <h5 class="card-title">Biofuel Supply Chain Design and the Impacts on Transportation Systems and Infrastructure</h5>
+                            <p><strong>Bai, Y.</strong>, &amp; Ouyang, Y.</p>
+                            <p><em>Handbook of Bioenergy: Bioenergy Supply Chain - Models and Applications</em>, 235-266 (2015)</p>
                         </div>
                     </div>
                 </a>
             </div>
-            
-            
-            
         </div>
 
     </section>
 
-
-
-    <!-- 🔹 Footer -->
     <footer class="footer mt-5">
-        &copy; NIIT CEE TRANSPORTATION INFRASTRUCTURE LAB | All Rights Reserved
+        &copy; NJIT CEE TRANSPORTATION INFRASTRUCTURE LAB | All Rights Reserved
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

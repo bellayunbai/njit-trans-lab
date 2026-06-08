@@ -78,28 +78,46 @@
 
         /* 🔹 研究项目卡片 */
         .research-topic-card {
+            display: flex;
+            flex-direction: column;
             height: 100%;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #d9e0ea;
             border-top: 4px solid #1A237E;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(26, 35, 126, 0.08);
         }
 
         .research-topic-card .research-topic-image {
             width: 100%;
-            height: 280px;
-            padding: 12px;
+            height: 330px;
+            padding: 10px 12px;
             object-fit: contain;
             background: #ffffff;
-            border-bottom: 1px solid #d8dee8;
+            border: 0;
         }
 
-        .research-topic-card .card-body {
+        .research-topic-card .topic-heading {
             display: flex;
             flex-direction: column;
-            min-height: 310px;
-            padding: 28px;
+            justify-content: center;
+            min-height: 112px;
+            padding: 20px 24px;
+            background: #f7f9fc;
+            border-color: #d9e0ea;
+        }
+
+        .research-topic-card .topic-heading-before {
+            border-bottom: 1px solid #d9e0ea;
+        }
+
+        .research-topic-card .topic-heading-after {
+            border-top: 1px solid #d9e0ea;
         }
 
         .topic-label {
-            margin-bottom: 10px;
+            margin-bottom: 7px;
             color: #5f6b7a;
             font-family: Arial, sans-serif;
             font-size: 0.75rem;
@@ -108,17 +126,27 @@
             text-transform: uppercase;
         }
 
-        .research-topic-card p {
-            margin-bottom: 16px;
+        .research-topic-card .card-title {
+            margin: 0;
+            color: #0b4da2 !important;
+            font-size: 1.35rem;
+            line-height: 1.28;
         }
 
-        .research-topic-card ul {
-            margin-bottom: 0;
-            padding-left: 1.25rem;
-        }
+        @media (max-width: 767.98px) {
+            .research-topic-card .research-topic-image {
+                height: 240px;
+                padding: 8px;
+            }
 
-        .research-topic-card li {
-            margin-bottom: 6px;
+            .research-topic-card .topic-heading {
+                min-height: 0;
+                padding: 18px 20px;
+            }
+
+            .research-topic-card .card-title {
+                font-size: 1.2rem;
+            }
         }
 
         .project-card {
@@ -232,21 +260,12 @@
         <div class="row g-4 mb-4">
             <div class="col-md-6">
                 <div class="card research-card research-topic-card">
+                    <div class="topic-heading topic-heading-before">
+                        <div class="topic-label">Vision-Language Intelligence</div>
+                        <h4 class="card-title">VLM-Based Railroad Grade Crossing Scene Understanding</h4>
+                    </div>
                     <img class="research-topic-image" src="img/vlm-grade-crossing.png"
                         alt="VLM-based railroad grade crossing scene understanding workflow">
-                    <div class="card-body">
-                        <div class="topic-label">Vision-Language Intelligence</div>
-                        <h4 class="card-title text-primary">VLM-Based Railroad Grade Crossing Scene Understanding</h4>
-                        <p>
-                            Developing vision-language models that transform complex grade-crossing imagery into
-                            structured, context-aware safety assessments rather than isolated object detections.
-                        </p>
-                        <ul>
-                            <li>Open-vocabulary classification of trains, vehicles, pedestrians, warning devices, and track obstacles</li>
-                            <li>Spatial and semantic reasoning across track occupancy, road-user behavior, and crossing status</li>
-                            <li>Explainable risk-state generation for real-time monitoring and decision support</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
@@ -254,18 +273,9 @@
                 <div class="card research-card research-topic-card">
                     <img class="research-topic-image" src="img/train-bell-detection.png"
                         alt="AI train bell sound detection workflow">
-                    <div class="card-body">
+                    <div class="topic-heading topic-heading-after">
                         <div class="topic-label">Acoustic Event Intelligence</div>
-                        <h4 class="card-title text-primary">AI-Based Train Sound Detection at Railroad Grade Crossings</h4>
-                        <p>
-                            Building edge-ready acoustic AI to detect approaching trains and safety-critical warning
-                            signals when camera visibility is limited by distance, occlusion, darkness, or weather.
-                        </p>
-                        <ul>
-                            <li>Recognition of train approach signatures, horns, bells, and background transportation noise</li>
-                            <li>Temporal modeling of log-Mel spectrograms for robust low-latency event detection</li>
-                            <li>Multimodal fusion with visual sensing to improve crossing-level situational awareness</li>
-                        </ul>
+                        <h4 class="card-title">AI-Based Train Sound Detection at Railroad Grade Crossings</h4>
                     </div>
                 </div>
             </div>

@@ -77,6 +77,50 @@
         }
 
         /* 🔹 研究项目卡片 */
+        .research-topic-card {
+            height: 100%;
+            border-top: 4px solid #1A237E;
+        }
+
+        .research-topic-card .research-topic-image {
+            width: 100%;
+            height: 280px;
+            padding: 12px;
+            object-fit: contain;
+            background: #ffffff;
+            border-bottom: 1px solid #d8dee8;
+        }
+
+        .research-topic-card .card-body {
+            display: flex;
+            flex-direction: column;
+            min-height: 310px;
+            padding: 28px;
+        }
+
+        .topic-label {
+            margin-bottom: 10px;
+            color: #5f6b7a;
+            font-family: Arial, sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+
+        .research-topic-card p {
+            margin-bottom: 16px;
+        }
+
+        .research-topic-card ul {
+            margin-bottom: 0;
+            padding-left: 1.25rem;
+        }
+
+        .research-topic-card li {
+            margin-bottom: 6px;
+        }
+
         .project-card {
             background: #ffffff;
             border-left: 5px solid #1A237E;
@@ -184,6 +228,48 @@
     <!-- 🔹 进行中的研究项目 -->
     <section class="container mt-5">
         <h2 class="section-title">On-going Projects / Research Topics</h2>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="card research-card research-topic-card">
+                    <img class="research-topic-image" src="img/vlm-grade-crossing.png"
+                        alt="VLM-based railroad grade crossing scene understanding workflow">
+                    <div class="card-body">
+                        <div class="topic-label">Vision-Language Intelligence</div>
+                        <h4 class="card-title text-primary">VLM-Based Railroad Grade Crossing Scene Understanding</h4>
+                        <p>
+                            Developing vision-language models that transform complex grade-crossing imagery into
+                            structured, context-aware safety assessments rather than isolated object detections.
+                        </p>
+                        <ul>
+                            <li>Open-vocabulary classification of trains, vehicles, pedestrians, warning devices, and track obstacles</li>
+                            <li>Spatial and semantic reasoning across track occupancy, road-user behavior, and crossing status</li>
+                            <li>Explainable risk-state generation for real-time monitoring and decision support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card research-card research-topic-card">
+                    <img class="research-topic-image" src="img/train-bell-detection.png"
+                        alt="AI train bell sound detection workflow">
+                    <div class="card-body">
+                        <div class="topic-label">Acoustic Event Intelligence</div>
+                        <h4 class="card-title text-primary">AI-Based Train Sound Detection at Railroad Grade Crossings</h4>
+                        <p>
+                            Building edge-ready acoustic AI to detect approaching trains and safety-critical warning
+                            signals when camera visibility is limited by distance, occlusion, darkness, or weather.
+                        </p>
+                        <ul>
+                            <li>Recognition of train approach signatures, horns, bells, and background transportation noise</li>
+                            <li>Temporal modeling of log-Mel spectrograms for robust low-latency event detection</li>
+                            <li>Multimodal fusion with visual sensing to improve crossing-level situational awareness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
     
